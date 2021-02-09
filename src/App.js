@@ -3,12 +3,16 @@ import { useState, useEffect } from "react";
 
 function App() {
   //add useState for all state variables
-
+  const [input, setInput] = useState({ name: "", gender: "", age: 0 });
+  const [items, setItems] = useState([]);
   //load locationStorage
   useEffect(() => {
     const items = localStorage.getItem("items");
     // ...
-  }, []);
+    if (items) {
+      setItems(JSON.parse(items));
+    }
+  }, [items]);
 
   return (
     <div className="card" style={{ width: 400 }}>
@@ -47,6 +51,7 @@ function App() {
         {/* display tables for all persons */}
         <p className="is-4 title has-text-centered">Person List</p>
         {/* sample table */}
+        <ItemTable name={" "} gender={"Male"} age={"50"} />
         <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
         <p>Theeramet Metha 620610793</p>
       </div>
