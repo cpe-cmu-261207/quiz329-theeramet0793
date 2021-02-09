@@ -48,7 +48,7 @@ function App() {
         <p className="is-4 title has-text-centered">Person List</p>
         {/* sample table */}
         <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
-        <p>Your name and code here</p>
+        <p>Theeramet Metha 620610793</p>
       </div>
     </div>
   );

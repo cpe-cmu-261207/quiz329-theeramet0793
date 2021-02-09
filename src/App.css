@@ -1,0 +1,10 @@
+button {
+  border-radius: 12px;
+  margin: 1px;
+  background-color: rgb(83, 169, 120);
+  text-align: center;
+}
+
+button:hover {
+  background-color: aquamarine;
+}
