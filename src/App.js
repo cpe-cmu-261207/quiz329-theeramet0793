@@ -25,6 +25,9 @@ function App() {
             type="text"
             placeholder="e.q John Smith"
             //update related state based on event
+            onChange={(e) => {
+              setInput({ ...input, name: e.currentTarget.value });
+            }}
           ></input>
         </div>
 
