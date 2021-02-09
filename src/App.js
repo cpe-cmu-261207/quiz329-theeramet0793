@@ -51,8 +51,8 @@ function App() {
         {/* display tables for all persons */}
         <p className="is-4 title has-text-centered">Person List</p>
         {/* sample table */}
-        <ItemTable name={" "} gender={"Male"} age={"50"} />
-        <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
+        <ItemTable name={items.name} gender={items.gender} age={items.age} />
+
         <p>Theeramet Metha 620610793</p>
       </div>
     </div>
